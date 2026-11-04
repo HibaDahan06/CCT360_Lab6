@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Live Earthquake Monitor</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <p class="eyebrow"> THE WEB IN REAL TIME</p>
+            <h1>EARTH <span>PULSE</span></h1>
+            <p class="subtitle">
+                What is happening right now?
+            </p>
+        </header>
+
+        <section class="panel">
+            <p class="label">
+                STRONGEST EATHQUAKE IN THE PAST 24 HOURS
+            </p>
+
+            <div id="magnitude">--</div>
+
+            <p id="location">Loading earthquake data...</p>
+            <p id="time" class="detail"></p>
+
+            <div class="meter">
+                <div id="magnitude-bar"></div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
