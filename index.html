@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,38 +6,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> Live Earthquake Monitor</title>
+    <title>Earth Pulse | Live Earthquake Monitor</title>
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
+
     <main class="container">
+
         <header>
-            <p class="eyebrow"> THE WEB IN REAL TIME</p>
+            <p class="eyebrow">THE WEB IN REAL TIME</p>
             <h1>EARTH <span>PULSE</span></h1>
             <p class="subtitle">
-                What is happening right now?
+                What is happening beneath our feet right now?
             </p>
         </header>
 
         <section class="panel">
+
             <p class="label">
-                STRONGEST EATHQUAKE IN THE PAST 24 HOURS
+                STRONGEST EARTHQUAKE IN THE PAST 24 HOURS
             </p>
 
             <div id="magnitude">--</div>
 
             <p id="location">Loading earthquake data...</p>
+
             <p id="time" class="detail"></p>
 
             <div class="meter">
                 <div id="magnitude-bar"></div>
             </div>
 
-        </section>
-    </main>
-</body>
+            <p id="message" class="message">
+                Contacting the earthquake database...
+            </p>
 
+        </section>
+
+        <section class="bottom">
+
+            <div class="stat">
+                <p class="label">
+                    REPORTED EARTHQUAKES IN THE PAST 24 HOURS
+                </p>
+                <p id="count" class="stat-value">--</p>
+            </div>
+
+            <div class="stat">
+                <p class="label">DATA SOURCE</p>
+                <p class="source">
+                    USGS Earthquake Hazards Program
+                </p>
+            </div>
+
+        </section>
+
+        <button id="refresh-button">
+            Refresh Live Data
+        </button>
+
+        <p id="updated" class="footer-note"></p>
+
+        <p class="footer-note">
+            Data provided by the
+            <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php">
+                U.S. Geological Survey
+            </a>.
+        </p>
+
+    </main>
+
+</body>
 </html>
